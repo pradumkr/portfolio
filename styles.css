@@ -56,6 +56,49 @@ section h2 {
     border-left: 4px solid #333;
 }
 
+.timeline {
+    position: relative;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.timeline-heading {
+    margin-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #333;
+    top: 0;
+    bottom: 0;
+    left: 30px;
+    margin-top: 10px;
+}
+.timeline-item {
+    position: relative;
+    margin: 10px 0;
+    padding-left: 50px;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #333;
+    top: 10px;
+    left: 24px;
+}
+.timeline-item .content {
+    padding: 10px 20px;
+    background-color: #e9ecef;
+    border-radius: 6px;
+    position: relative;
+}
+
 footer {
     background: #333;
     color: #fff;
